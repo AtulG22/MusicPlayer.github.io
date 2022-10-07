@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section class="container">
+
+        <div class="leftsection">
+            <header>
+                <h1>
+                    Musify 
+                </h1>
+            </header>
+            <div id="progressbar"></div>
+            <div class="cardbox" id="songcards">
+                <!-- <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/144707-moonlight-harnoor-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Moonlight - By Harnoor</h1>
+                        <button class="btn" onclick="playaudio(5)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/146141-believe-emiway-bantai-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Blieve - By Emiway Bantai</h1>
+                        <button class="btn" onclick="playaudio(7)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/146051-bad-boy-x-bad-girl-badshah-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Bad Boy X Bad Girl - Badshah,
+                        </h1>
+                        <button class="btn" onclick="playaudio(6)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/144604-3-59-am-divine-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">3:59 AM - Divine</h1>
+                        <button class="btn" onclick="playaudio(4)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/148191-oo-bolega-ya-oo-oo-bolega-pushpa-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Oo bolega ya oo oo bolega
+                            
+                        </h1>
+                        <button class="btn" onclick="playaudio(8)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/148789-kehndi-hundi-si-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Kehndi hundi si - Ap Dhillon</h1>
+                        <button class="btn" onclick="playaudio(10)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/143817-tere-naal-darshan-raval-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Tere Naal - Darshan Raval </h1>
+                        <button class="btn" onclick="playaudio(3)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/148529-jaise-aankhon-ki-dibiya-mein-nindiya-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Tare zammen par</h1>
+                        <button class="btn" onclick="playaudio(9)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/143103-ishq-tera-guru-randhawa-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Ishq Tera- Guru Randhawa</h1>
+                        <button class="btn" onclick="playaudio(1)">Play</button>
+                    </div>
+                </div>
+                <div class="playcard">
+                    <div class="audioimg">
+                        <img src="./img/143722-wishlist-dino-james-mp3-song-300.jpg">
+                    </div>
+                    <div class="audio_detail">
+
+                        <h1 class="title">Wishlist - Dino James</h1>
+                        <button class="btn" onclick="playaudio(2)">Play</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="rightsection">
+            <div class="thumnail">
+                <img id="thumbnail" src="img/148245-we-rollin-shubh-mp3-song-300.jpg" class="thumnail_img">
+            </div>
+
+            <audio id="audios" controls src="./audio/We Rollin - Shubh.mp3" controlsList="nodownload"></audio>
+                <!-- <source src="./audio/We Rollin - Shubh.mp3"> -->
+            </audio>
+
+            <h2 id="right_title" class="audio_title">We Rollin - Shubh</h2>
+        </div>
+
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
